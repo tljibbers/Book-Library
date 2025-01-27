@@ -16,7 +16,7 @@ body {
     font-size: 50px;
     overflow: visible;
     position:relative;
-    z-index: 999;
+    z-index: 1000;
 }
 
 .headerFlex {
@@ -35,6 +35,8 @@ body {
     min-height: 100%;
 }
 
+
+
 .newBookButton {
     display: flex;
     justify-content: flex-end;
@@ -46,6 +48,9 @@ body {
     display: grid;
     grid-template-columns: 100px 100px 100px;
     grid-template-rows: 100px 100px 100px;
+    gap: 20px;
+    grid-auto-columns: 100px;
+    grid-auto-rows: 100px;
 }
 
 .formContainer {
@@ -59,11 +64,14 @@ body {
     position: relative;
     bottom: 200px;
     visibility: hidden;
+    z-index: 999;
 }
 
 .submitForm {
     display: grid;
     font-size: 30px;
+    font-family: "Roboto";
+    font-weight: 60;
     gap: 15px;
 }
 

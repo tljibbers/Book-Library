@@ -4,7 +4,8 @@ const mainBody = document.querySelector("body");
 const selector = document.querySelector(".gridContainer");
 const buttonClick = document.querySelector(".newBookButton");
 const submitForm = document.querySelector(".formContainer");
-const closeClick = document.querySelector(".closeButton")
+const closeClick = document.querySelector(".closeButton");
+
 
 
 function book(title, author, pages, haveRead)
