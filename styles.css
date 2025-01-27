@@ -48,6 +48,41 @@ body {
     grid-template-rows: 100px 100px 100px;
 }
 
+.formContainer {
+    display: grid;
+    justify-content: center;
+    width: 400px;
+    height: 500px;
+    margin: auto;
+    background-color: white;
+    border-radius: 10px;
+    position: relative;
+    bottom: 200px;
+    visibility: hidden;
+}
+
+.submitForm {
+    display: grid;
+    font-size: 30px;
+    gap: 15px;
+}
+
+#title, #author, #pages {
+    width: 300px;
+}
+
+.buttonSection {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.buttonForm {
+    width: 100px;
+    border-radius: 10px;
+    height: 50px;
+}
+
 button {
     height: 60px;
     width: 60px;

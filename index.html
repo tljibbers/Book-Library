@@ -21,8 +21,38 @@
             <div class="newBookButton">
                 <button type="button"><img id="plusImage" src="images/plus.svg"></button>
             </div>
-            <div class="gridContainer">
-                
+
+            <div class="gridContainer"></div>
+
+            <div class="formContainer">
+                <form class="submitForm">
+                    <div class="titleSection">
+                        <label for="title">Title:</label><br>
+                        <input type="text" id="title"><br>
+                    </div>
+                    <div class="authorSection">
+                        <label for="author">Author:</label><br>
+                        <input type="text" id="author"><br>
+                    </div>
+
+                    <div class="pagesSection">
+                        <label for="number">Number of Pages:</label><br>
+                        <input type="number" id="pages"><br>
+                    </div>
+
+                    <div class="readSection">
+                        <input type="radio" id="Read" name="haveRead" value="HaveRead">
+                        <label for="Read">Have Read</label>
+                        
+                        <input type="radio" id="NotRead" name="haveRead" value="HaventRead">
+                        <label for="NotRead">Haven't Read</label>
+                    </div>
+
+                    <div class="buttonSection">
+                        <button class="buttonForm closeButton" type="button" value="Button">Close</button>
+                        <button class="buttonForm" type="submit" value="Submit">Submit</button>
+                    </div>
+                </form>
             </div>
         </div>
     </body>

@@ -2,7 +2,10 @@ const myLibrary = [];
 const myLibraryDOM = [];
 const mainBody = document.querySelector("body");
 const selector = document.querySelector(".gridContainer");
-const buttonClick = document.querySelector("button");
+const buttonClick = document.querySelector(".newBookButton");
+const submitForm = document.querySelector(".formContainer");
+const closeClick = document.querySelector(".closeButton")
+
 
 function book(title, author, pages, haveRead)
 {
@@ -39,9 +42,26 @@ function displayBooks(myLibrary, myLibraryDOM)
     for (let i in myLibrary)
     {
         const bookObject = document.createElement("div");
+        const bookTitle = document.createTextNode(myLibrary[i].title);
+        const bookAuthor = document.createTextNode(myLibrary[i].author);
+        const bookPages = document.createTextNode(myLibrary[i].pages);
+        bookObject.appendChild(bookTitle);
+        bookObject.appendChild(bookAuthor);
+        bookObject.appendChild(bookPages);
+        bookObject.style.borderStyle = "dotted";
         myLibraryDOM.push(bookObject)
         selector.appendChild(bookObject);
     }
+}
+
+function displayForm()
+{
+    submitForm.style.visibility = "visible";
+}
+
+function hideForm()
+{
+    submitForm.style.visibility = "hidden";
 }
 
 addBookToLibrary("yes", "yes", "yes", true, myLibrary);
@@ -49,6 +69,12 @@ addBookToLibrary("no", "no", "no", true, myLibrary);
 
 displayBooks(myLibrary, myLibraryDOM);
 
+
 buttonClick.onclick = function() {
     console.log("yay!");
+    displayForm()
+}
+
+closeClick.onclick = function() {
+    hideForm()
 }
