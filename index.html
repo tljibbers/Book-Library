@@ -28,31 +28,33 @@
             <div class="gridContainer"></div>
 
             <div class="formContainer">
-                <form class="submitForm">
+                <form id="form" class="submitForm">
+                    <div class="mainTitle">Add Book</div>
                     <div class="titleSection">
                         <label for="title">Title:</label><br>
-                        <input type="text" id="title"><br>
+                        <input type="text" id="title" required><br>
                     </div>
                     <div class="authorSection">
                         <label for="author">Author:</label><br>
-                        <input type="text" id="author"><br>
+                        <input type="text" id="author" required><br>
                     </div>
 
                     <div class="pagesSection">
                         <label for="number">Number of Pages:</label><br>
-                        <input type="number" id="pages"><br>
+                        <input type="number" id="pages" required><br>
                     </div>
 
                     <div class="readSection">
-                        <input type="radio" id="Read" name="haveRead" value="HaveRead">
+                        <input type="radio" id="Read" name="haveRead" value="HaveRead" required>
                         <label for="Read">Have Read</label>
                         
-                        <input type="radio" id="NotRead" name="haveRead" value="HaventRead">
+                        <input type="radio" id="NotRead" name="haveRead" value="HaventRead" required>
                         <label for="NotRead">Haven't Read</label>
                     </div>
 
                     <div class="buttonSection">
                         <button class="buttonForm closeButton" type="button" value="Button">Close</button>
+                        <button class="buttonForm" type="reset" value="Reset">Reset</button>
                         <button class="buttonForm" type="submit" value="Submit">Submit</button>
                     </div>
                 </form>
